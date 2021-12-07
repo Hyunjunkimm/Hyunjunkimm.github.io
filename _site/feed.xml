@@ -1,4 +1,145 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-12-07T10:17:03+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/jekyll/update/2021/12/07/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2021-12-07T09:51:25+09:00</published><updated>2021-12-07T09:51:25+09:00</updated><id>http://localhost:4000/jekyll/update/2021/12/07/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2021/12/07/welcome-to-jekyll.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-12-07T10:50:42+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Hyunjunkimm Blog</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">깃허브블로그 만들기</title><link href="http://localhost:4000/github/jekyll/2021/12/07/github-blog.html" rel="alternate" type="text/html" title="깃허브블로그 만들기" /><published>2021-12-07T10:47:12+09:00</published><updated>2021-12-07T10:47:12+09:00</updated><id>http://localhost:4000/github/jekyll/2021/12/07/github-blog</id><content type="html" xml:base="http://localhost:4000/github/jekyll/2021/12/07/github-blog.html">&lt;p&gt;&lt;img src=&quot;https://poiemaweb.com/img/jekyll.png&quot; alt=&quot;jekyll Logo&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;1-introduction&quot;&gt;&lt;a href=&quot;https://poiemaweb.com/jekyll-basics#1-introduction&quot;&gt;#&lt;/a&gt;1. Introduction&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jelyll&lt;/a&gt;은  &lt;a href=&quot;https://daringfireball.net/projects/markdown/&quot;&gt;markdown&lt;/a&gt;으로 작성된 문서를 HTML로 변환하여 웹사이트를 구축할 수 있도록 돕는 Static Website generator로 Ruby로 작성되어 있다.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://pages.github.com/&quot;&gt;GitHub Pages&lt;/a&gt;는 GitHub에서 제공하는 Static Website로 GitHub repository에 리소스를 push하는 것 만으로 간단히 웹사이트를 만들 수 있다.&lt;/p&gt;
+
+&lt;p&gt;Static Website이므로 Database 등은 사용할 수 없으나 무료로 유지보수가 간편한 Website를 Hosting할 수 있다는 장점이 있다.&lt;/p&gt;
+
+&lt;p&gt;GitHub Pages는 HTML, CSS, Javascript만으로도 웹사이트를 구축할 수 있으나 markdown을 사용하여 웹사이트를 generate하기 위해 Jelyll을 지원한다.&lt;/p&gt;
+
+&lt;p&gt;로컬 환경에서 Jelyll을 사용하여 웹사이트를 작성/테스트하고 GitHub repository에 웹리소스를 push하면 매우 간단히 Website를 Hosting할 수 있는 구조이다.&lt;/p&gt;
+
+&lt;h1 id=&quot;2-setup&quot;&gt;&lt;a href=&quot;https://poiemaweb.com/jekyll-basics#2-setup&quot;&gt;#&lt;/a&gt;2. Setup&lt;/h1&gt;
+
+&lt;p&gt;MacOS에서의 Setup 방법을 설명한다.&lt;/p&gt;
+
+&lt;h2 id=&quot;21-github-pages&quot;&gt;&lt;a href=&quot;https://poiemaweb.com/jekyll-basics#21-github-pages&quot;&gt;#&lt;/a&gt;2.1 GitHub Pages&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;1. github.com에서 repository를 생성한다&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://poiemaweb.com/img/user-repo.png&quot; alt=&quot;Repository 생성&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;2. local에 repository를 clone한다&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;terminal을 사용하는 경우&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git clone https://github.com/username/username.github.io
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://central.github.com/mac/latest&quot;&gt;GitHub Desktop&lt;/a&gt;을 사용하는 경우&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://poiemaweb.com/img/setup-in-desktop.png&quot; alt=&quot;clone repository&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;3. index.html 생성&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;html&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;h1&amp;gt;&lt;/span&gt;Hello World&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;I&apos;m hosted with GitHub Pages.&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;4. Commit &amp;amp; sync&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;terminal을 사용하는 경우&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;username.github.io
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git add &lt;span class=&quot;nt&quot;&gt;--all&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git commit &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Initial commit&quot;&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git push &lt;span class=&quot;nt&quot;&gt;-u&lt;/span&gt; origin master
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://central.github.com/mac/latest&quot;&gt;GitHub Desktop&lt;/a&gt;을 사용하는 경우&lt;/p&gt;
+
+&lt;p&gt;Commit to master 버튼을 클릭하여 GitHub에 commit 후, Sync 버튼을 클릭한다. Sync 버튼의 역할은  &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git push&lt;/code&gt;과  &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git pull --rebase&lt;/code&gt;을 동시에 실행하는 것이다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://poiemaweb.com/img/sync-mac.png&quot; alt=&quot;Commit &amp;amp; sync&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;5. 동작 확인&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;http://username.github.xn–io-xy7j 접속하여 정상적으로 동작하는지 확인한다.&lt;/p&gt;
+
+&lt;h2 id=&quot;22-install-ruby&quot;&gt;&lt;a href=&quot;https://poiemaweb.com/jekyll-basics#22-install-ruby&quot;&gt;#&lt;/a&gt;2.2 Install Ruby&lt;/h2&gt;
+
+&lt;p&gt;GitHub Pages가 사용하는 ruby version은 2.1.7이다. 따라서 로컬 환경에도 ruby version 2.1.7을 install하는 것이 안전하다.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://pages.github.com/versions/&quot;&gt;GitHub Pages Dependency versions&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;1.  &lt;a href=&quot;https://rvm.io/&quot;&gt;RVM(Ruby Version Manager)&lt;/a&gt;를 사용하여 Ruby 2.1.7을 설치한다.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;curl &lt;span class=&quot;nt&quot;&gt;-sSL&lt;/span&gt; https://get.rvm.io | bash &lt;span class=&quot;nt&quot;&gt;-s&lt;/span&gt; stable &lt;span class=&quot;nt&quot;&gt;--ruby&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;2. terminal을 재기동하고 ruby version 2.1.7을 install한다&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;rvm &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;2.1.7
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;rvm use 2.1.7 &lt;span class=&quot;nt&quot;&gt;--default&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;ruby &lt;span class=&quot;nt&quot;&gt;-v&lt;/span&gt;
+ruby 2.1.7p400 &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;2015-08-18 revision 51632&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;x86_64-darwin14.0]
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;23-install-jekyll&quot;&gt;&lt;a href=&quot;https://poiemaweb.com/jekyll-basics#23-install-jekyll&quot;&gt;#&lt;/a&gt;2.3 Install Jekyll&lt;/h2&gt;
+
+&lt;p&gt;Jekyll을 설치한다.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;gem &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;jekyll bundler
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;jekyll &lt;span class=&quot;nt&quot;&gt;-v&lt;/span&gt;
+jekyll 3.2.1
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;3-default-jekyll-site-생성&quot;&gt;&lt;a href=&quot;https://poiemaweb.com/jekyll-basics#3-default-jekyll-site-%EC%83%9D%EC%84%B1&quot;&gt;#&lt;/a&gt;3. Default Jekyll Site 생성&lt;/h1&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;jekyll new username.github.io
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;username.github.io
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;bundle &lt;span class=&quot;nb&quot;&gt;install&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;bundle &lt;span class=&quot;nb&quot;&gt;exec &lt;/span&gt;jekyll serve
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;new&lt;/code&gt;  command&lt;/p&gt;
+
+&lt;p&gt;지정한 디렉터리 내에 Jekyll의 기본 뼈대(scaffold)를 생성한다.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;serve&lt;/code&gt;  command&lt;/p&gt;
+
+&lt;p&gt;웹사이트를 build하고 개발용 서버를 기동하며 파일 변경을 watch한다. 웹리소스가 변경되면 서버를 재기동할 필요가 없으나  &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt;이 변경되면 서버를 재기동하여야 한다.&lt;/p&gt;
+
+&lt;p&gt;서버가 기동되면 http://localhost:4000에 접속하여 동작을 확인한다.&lt;/p&gt;
+
+&lt;h1 id=&quot;4-jekyll-themes&quot;&gt;&lt;a href=&quot;https://poiemaweb.com/jekyll-basics#4-jekyll-themes&quot;&gt;#&lt;/a&gt;4. Jekyll themes&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://jekyllthemes.org/&quot;&gt;Jekyll Themes&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://jekyllthemes.io/&quot;&gt;jekyllthemes.io&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;reference&quot;&gt;&lt;a href=&quot;https://poiemaweb.com/jekyll-basics#reference&quot;&gt;#&lt;/a&gt;Reference&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://pages.github.com/&quot;&gt;GitHub Pages&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="github" /><category term="jekyll" /><summary type="html"></summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/jekyll/update/2021/12/07/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2021-12-07T09:51:25+09:00</published><updated>2021-12-07T09:51:25+09:00</updated><id>http://localhost:4000/jekyll/update/2021/12/07/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2021/12/07/welcome-to-jekyll.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
 
 &lt;p&gt;Jekyll requires blog post files to be named according to the following format:&lt;/p&gt;
 
